@@ -1,0 +1,32 @@
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.countries.field_country_code
+    - taxonomy.vocabulary.countries
+_core:
+  default_config_hash: JW46JY5I8erpnOV6fly3uBOQ2ZSmQBy-HWcrNSSbWok
+id: taxonomy_term.countries.default
+targetEntityType: taxonomy_term
+bundle: countries
+mode: default
+content:
+  field_country_code:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  description: true
+  langcode: true
+  path: true
